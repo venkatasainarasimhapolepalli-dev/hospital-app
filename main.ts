@@ -53,7 +53,7 @@ app.post("/chat", async (req: Request, res: Response) => {
   if (useAI) {
     return res.json({
       type: "ai",
-      reply: "🤖 AI Suggestion: Take rest and drink water."
+      reply: " AI Suggestion: Take rest and drink water."
     });
   }
 

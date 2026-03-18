@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function App() {
-  const [city, setCity] = useState("Guntur");
+  const [city, setCity] = useState("HYD");
   const [department, setDepartment] = useState("Cardiology");
   const [doctors, setDoctors] = useState([]);
   const [message, setMessage] = useState("");
@@ -81,7 +81,7 @@ function App() {
       <div style={{ border: "1px solid gray", height: 200, padding: 10 }}>
         {chat.map((c, i) => (
           <p key={i}>
-            {c.sender === "user" && "👤 You: "}
+            {c.sender === "user" && " You: "}
             {c.sender === "doctor" && "👨‍⚕️ "}
             {c.sender === "ai" && "🤖 "}
             {c.text}
